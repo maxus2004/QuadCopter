@@ -1,0 +1,11 @@
+void Madgwick_readQuaternions(float *q0, float *q1, float *q2, float *q3);
+void Madgwick_reset();
+void Madgwick_setKoeff(float sampleFreq, float beta);
+void Madgwick_update(float gx, float gy, float gz, float ax, float ay, float az, float mx, float my, float mz);
+void Madgwick_updateIMU(float gx, float gy, float gz, float ax, float ay, float az);
+float Madgwick_getPitchRad();
+float Madgwick_getRollRad();
+float Madgwick_getYawRad();
+float Madgwick_getPitchDeg();
+float Madgwick_getRollDeg();
+float Madgwick_getYawDeg();
