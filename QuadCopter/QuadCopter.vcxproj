@@ -50,6 +50,7 @@
     <ClCompile>
       <CLanguageStandard>GNU11</CLanguageStandard>
       <Optimization>O3</Optimization>
+      <AdditionalIncludeDirectories>src</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -58,19 +59,27 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
-    <ClCompile Include="barometer.c" />
-    <ClCompile Include="filter.c" />
-    <ClCompile Include="IMU.c" />
-    <ClCompile Include="main.c" />
-    <ClCompile Include="motors.c" />
-    <ClCompile Include="PID.c" />
-    <ClCompile Include="radio.c" />
-    <ClCompile Include="SPI.c" />
-    <ClCompile Include="sr04.c" />
+    <ClCompile Include="src\barometer.c" />
+    <ClCompile Include="src\filter.c" />
+    <ClCompile Include="src\IMU.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\motors.c" />
+    <ClCompile Include="src\PID.c" />
+    <ClCompile Include="src\radio.c" />
+    <ClCompile Include="src\SPI.c" />
+    <ClCompile Include="src\sr04.c" />
     <ClCompile Include="system_stm32f1xx.c" />
-    <ClInclude Include="SPI.h" />
-    <ClInclude Include="sr04.h" />
-    <ClInclude Include="telemetry.h" />
+    <ClInclude Include="src\barometer.h" />
+    <ClInclude Include="src\filter.h" />
+    <ClInclude Include="src\IMU.h" />
+    <ClInclude Include="src\math_extras.h" />
+    <ClInclude Include="src\motors.h" />
+    <ClInclude Include="src\PID.h" />
+    <ClInclude Include="src\radio.h" />
+    <ClInclude Include="src\shared.h" />
+    <ClInclude Include="src\SPI.h" />
+    <ClInclude Include="src\sr04.h" />
+    <ClInclude Include="src\telemetry.h" />
     <None Include="stm32.props" />
     <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\StartupFiles\startup_stm32f103xb.c" />
     <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_adc.c" />
@@ -89,14 +98,6 @@
     <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_tim.c" />
     <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usart.c" />
     <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_utils.c" />
-    <ClInclude Include="barometer.h" />
-    <ClInclude Include="filter.h" />
-    <ClInclude Include="math_extras.h" />
-    <ClInclude Include="IMU.h" />
-    <ClInclude Include="motors.h" />
-    <ClInclude Include="PID.h" />
-    <ClInclude Include="radio.h" />
-    <ClInclude Include="shared.h" />
     <ClInclude Include="$(BSP_ROOT)\STM32F1xxxx\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_adc.h" />
     <ClInclude Include="$(BSP_ROOT)\STM32F1xxxx\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_bus.h" />
     <ClInclude Include="$(BSP_ROOT)\STM32F1xxxx\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_cortex.h" />

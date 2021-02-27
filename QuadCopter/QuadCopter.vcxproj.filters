@@ -159,66 +159,66 @@
     <None Include="stm32.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
-    <ClCompile Include="main.c">
+    <ClCompile Include="src\main.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="filter.c">
+    <ClCompile Include="src\barometer.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="IMU.c">
+    <ClCompile Include="src\filter.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="radio.c">
+    <ClCompile Include="src\IMU.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="PID.c">
+    <ClCompile Include="src\motors.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="motors.c">
+    <ClCompile Include="src\PID.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="barometer.c">
+    <ClCompile Include="src\radio.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="SPI.c">
+    <ClCompile Include="src\SPI.c">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="sr04.c">
+    <ClCompile Include="src\sr04.c">
       <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IMU.h">
+    <ClInclude Include="src\barometer.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="shared.h">
+    <ClInclude Include="src\filter.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="radio.h">
+    <ClInclude Include="src\IMU.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="PID.h">
+    <ClInclude Include="src\math_extras.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="motors.h">
+    <ClInclude Include="src\motors.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="filter.h">
+    <ClInclude Include="src\PID.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="barometer.h">
+    <ClInclude Include="src\radio.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="SPI.h">
+    <ClInclude Include="src\shared.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="math_extras.h">
+    <ClInclude Include="src\SPI.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="telemetry.h">
+    <ClInclude Include="src\sr04.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="sr04.h">
+    <ClInclude Include="src\telemetry.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>
