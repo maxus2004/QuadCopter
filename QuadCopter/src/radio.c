@@ -250,27 +250,19 @@ bool radio_receive(float dTime, float* tx, float* ty, float* tz, float* th, bool
 	float joysticks[4];
 	memcpy(joysticks, data + 1, 16);
 
+
+	if (joysticks[0] < -1.1 || joysticks[0] > 1.1 ||
+		joysticks[1] < -1.1 || joysticks[1] > 1.1 ||
+		joysticks[2] < -1.1 || joysticks[2] > 1.1 ||
+		joysticks[3] < -1.1 || joysticks[3] > 1.1) {
+		return false;
+	}
+
 	if (dTime > 0.2f) dTime = 0.2f;
 
-	if (joysticks[1] < -0.4f)joysticks[1] += 0.4f;
-	else if (joysticks[1] > 0.4f)joysticks[1] -= 0.4f;
-	else joysticks[1] = 0;
-
-	if (joysticks[0] < -0.4f)joysticks[0] += 0.4f;
-	else if (joysticks[0] > 0.4f)joysticks[0] -= 0.4f;
-	else joysticks[0] = 0;
-
-	if (joysticks[2] < -0.15f)joysticks[2] += 0.15f;
-	else if (joysticks[2] > 0.15f)joysticks[2] -= 0.15f;
-	else joysticks[2] = 0;
-
-	if (joysticks[3] < -0.15f)joysticks[3] += 0.15f;
-	else if (joysticks[3] > 0.15f)joysticks[3] -= 0.15f;
-	else joysticks[3] = 0;
-
-	float ntx = joysticks[3] * -20;
-	float nty = joysticks[2] * -20;
-	float thv = joysticks[1] * 1.5f;
+	float ntx = joysticks[2] * -15;
+	float nty = joysticks[3] * 15;
+	float thv = joysticks[1] * -1.5f;
 	float tzv = joysticks[0] * -180;
 
 	float nth = *th + thv * dTime;

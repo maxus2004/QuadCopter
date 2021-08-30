@@ -5,8 +5,10 @@ typedef struct
 {
 	euler rotation;
 	euler target_rotation;
+	vector3 global_acceleration;
+	vector3 acceleration;
 	float thrust;
 	float altitude;
 	float target_altitude;
-	float sonarAlt;
-} s_telemetry;
+	uint8_t state;
+} __attribute__((packed)) s_telemetry;
